@@ -4,7 +4,7 @@ player2 = "O"
 def print_board(table):
     for i in range(len(table)):
         for j in range(len(table[i])):
-            print table[i][j],
+            print ((table[i][j]),end =" ")
         print("")
 
 def main():
@@ -14,7 +14,7 @@ def main():
 
     while True:
         print_board(table)
-        print "Next turn:", turn
+        print ("Next turn:"), turn
         row = int(input("press enter row: "))
         col = int(input("press enter col: "))
         while not validInput(row, col,table):
